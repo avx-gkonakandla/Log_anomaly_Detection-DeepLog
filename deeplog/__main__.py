@@ -75,7 +75,7 @@ if __name__ == "__main__":
         X, y, label, mapping = preprocessor.csv(args.csv)
     elif args.txt:
         # Load txt file
-        X, y, label, mapping = preprocessor.txt(args.txt)
+        X, y, label, mapping = preprocessor.text(args.txt)
 
     X = X.to(args.device)
     y = y.to(args.device)
